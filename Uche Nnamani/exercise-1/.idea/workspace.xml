@@ -59,6 +59,29 @@
       <recent name="com.uche.exercise_1" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="CollatzFunctionUtilTest.collatzSeriesUsingForLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uche.exercise_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uche.exercise_1" />
+      <option name="MAIN_CLASS_NAME" value="com.uche.exercise_1.CollatzFunctionUtilTest" />
+      <option name="METHOD_NAME" value="collatzSeriesUsingForLoop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CollatzFunctionUtilTest.collatzSeriesUsingForLoop" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
