@@ -7,7 +7,6 @@
     <list default="true" id="316ed9ac-8a69-4c20-9363-fee143b74340" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/uche/exercise_1/CollatzFunctionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uche/exercise_1/CollatzFunctionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/uche/exercise_1/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/uche/exercise_1/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/uche/exercise_1/CollatzFunctionUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/uche/exercise_1/CollatzFunctionUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/uche/exercise_1/CollatzFunctionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/uche/exercise_1/CollatzFunctionUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/uche/exercise_1/CollatzFunctionUtilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/uche/exercise_1/CollatzFunctionUtilTest.class" afterDir="false" />
@@ -55,7 +54,22 @@
       <recent name="com.uche.exercise_1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CollatzFunctionUtilTest.collatzSeriesUsingForLoopTest_3">
+  <component name="RunManager" selected="JUnit.CollatzFunctionUtilTest">
+    <configuration name="CollatzFunctionUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uche.exercise_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uche.exercise_1" />
+      <option name="MAIN_CLASS_NAME" value="com.uche.exercise_1.CollatzFunctionUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CollatzFunctionUtilTest.collatzSeriesUsingForLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise-1" />
       <extension name="coverage">
@@ -88,8 +102,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CollatzFunctionUtilTest.collatzSeriesUsingRecursionTest_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.uche.exercise_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.uche.exercise_1" />
+      <option name="MAIN_CLASS_NAME" value="com.uche.exercise_1.CollatzFunctionUtilTest" />
+      <option name="METHOD_NAME" value="collatzSeriesUsingRecursionTest_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollatzFunctionUtilTest" />
+        <item itemvalue="JUnit.CollatzFunctionUtilTest.collatzSeriesUsingRecursionTest_1" />
         <item itemvalue="JUnit.CollatzFunctionUtilTest.collatzSeriesUsingForLoopTest_3" />
         <item itemvalue="JUnit.CollatzFunctionUtilTest.collatzSeriesUsingForLoop" />
       </list>
