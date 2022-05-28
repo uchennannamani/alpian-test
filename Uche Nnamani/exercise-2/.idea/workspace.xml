@@ -22,6 +22,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>

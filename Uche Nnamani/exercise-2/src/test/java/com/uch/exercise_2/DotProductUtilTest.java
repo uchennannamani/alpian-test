@@ -1,6 +1,8 @@
 package com.uch.exercise_2;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,16 +23,20 @@ class DotProductUtilTest {
     int[] d = {7, 8, 9, 10, 11, 12};
 
     @Test
-    void calculateDotProductUsingForLoopTest_1() {
+    @DisplayName("TEST_1: Test for 'happy path' using Map Reduce")
+    @Order(1)
+    void calculateDotProductUsingMapReduce_1() {
 
-        assertEquals(70, dotProductUtil.calculateDotProductUsingForLoop(a, b));
-        assertEquals(217, dotProductUtil.calculateDotProductUsingForLoop(c, d));
+        assertEquals(70, dotProductUtil.calculateDotProductUsingMapReduce(a, b));
+        assertEquals(217, dotProductUtil.calculateDotProductUsingMapReduce(c, d));
     }
 
     @Test
-    void calculateDotProductUsingForLoopTest_2() {
+    @DisplayName("TEST_2: Test for exception using Map Reduce")
+    @Order(2)
+    void calculateDotProductUsingMapReduce_2() {
 
-        assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingForLoop(a, c));
-        assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingForLoop(a, d));
+        assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingMapReduce(a, c));
+        assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingMapReduce(a, d));
     }
 }
