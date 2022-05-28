@@ -20,34 +20,67 @@ class CollatzFunctionUtilTest {
     }
 
     @Test
-    @DisplayName("TEST_1: Testing the Collatz function using recursion.")
+    @DisplayName("TEST_1: Testing the Collatz function, for number 5, using head recursion.")
     @Order(1)
-    void collatzSeriesUsingRecursionTest_1() {
+    void collatzSeriesUsingHeadRecursionTest_1() {
         Integer[] a = {5, 16, 8, 4, 2};
         List<Integer> expected = Arrays.asList(a);
-        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingRecursion(5);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingHeadRecursion(5);
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
 
     @Test
-    @DisplayName("TEST_2: Testing the Collatz function using recursion.")
+    @DisplayName("TEST_2: Testing the Collatz function, for number 15, using head recursion.")
     @Order(2)
-    void collatzSeriesUsingRecursionTest_2() {
+    void collatzSeriesUsingHeadRecursionTest_2() {
         Integer[] b = {15, 46, 23, 70, 35, 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2};
         List<Integer> expected = Arrays.asList(b);
-        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingRecursion(15);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingHeadRecursion(15);
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
 
     @Test
-    @DisplayName("TEST_3: Testing the Collatz function using recursion.")
+    @DisplayName("TEST_3: Testing the Collatz function, for number 1, using head recursion.")
     @Order(3)
-    void collatzSeriesUsingRecursionTest_3() {
+    void collatzSeriesUsingHeadRecursionTest_3() {
         Integer[] b = {};
         List<Integer> expected = Arrays.asList(b);
-        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingRecursion(1);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingHeadRecursion(1);
+
+        assertArrayEquals(expected.toArray(), actual.toArray());
+    }
+
+    @Test
+    @DisplayName("TEST_4: Testing the Collatz function, for number 5, using tail recursion.")
+    @Order(4)
+    void collatzSeriesUsingTailRecursionTest_1() {
+        Integer[] a = {5, 16, 8, 4, 2};
+        List<Integer> expected = Arrays.asList(a);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingTailRecursion(5);
+
+        assertArrayEquals(expected.toArray(), actual.toArray());
+    }
+
+    @Test
+    @DisplayName("TEST_5: Testing the Collatz function, for number 15, using tail recursion.")
+    @Order(5)
+    void collatzSeriesUsingTailRecursionTest_2() {
+        Integer[] b = {15, 46, 23, 70, 35, 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2};
+        List<Integer> expected = Arrays.asList(b);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingTailRecursion(15);
+
+        assertArrayEquals(expected.toArray(), actual.toArray());
+    }
+
+    @Test
+    @DisplayName("TEST_6: Testing the Collatz function, for number 1, using tail recursion.")
+    @Order(6)
+    void collatzSeriesUsingTailRecursionTest_3() {
+        Integer[] b = {};
+        List<Integer> expected = Arrays.asList(b);
+        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingTailRecursion(1);
 
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
