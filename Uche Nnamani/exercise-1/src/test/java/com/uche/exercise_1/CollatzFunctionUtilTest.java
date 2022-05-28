@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CollatzFunctionUtilTest {
 
     @Test
+    @DisplayName("Testing the Collatz function using for loop.")
     void collatzSeriesUsingForLoop() {
         CollatzFunctionUtil collatzFunctionUtil = new CollatzFunctionUtil();
 
