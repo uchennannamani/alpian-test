@@ -5,10 +5,9 @@ import java.util.List;
 
 public class CollatzFunctionUtil {
 
+    private final List<Integer> collatzSeries = new ArrayList<>();
 
     public List<Integer> calculateCollatzSeriesUsingForLoop(int n) {
-
-        List<Integer> collatzSeries = new ArrayList<>();
 
         while (n > 1) {
             collatzSeries.add(n);
@@ -17,5 +16,4 @@ public class CollatzFunctionUtil {
 
         return collatzSeries;
     }
-
 }
