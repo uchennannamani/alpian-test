@@ -1,7 +1,11 @@
 package com.uche.customermapperservice;
 
+import com.uche.customermapperservice.dao.CustomerRepository;
+import com.uche.customermapperservice.model.Customer;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class CustomerMapperServiceApplication {
@@ -10,4 +14,11 @@ public class CustomerMapperServiceApplication {
 		SpringApplication.run(CustomerMapperServiceApplication.class, args);
 	}
 
+	@Bean
+	CommandLineRunner commandLineRunner(CustomerRepository customerRepository) {
+		return args -> {
+			customerRepository.save(new Customer(1, "2021-11-25"));
+			customerRepository.save(new Customer(2, "2020-09-15"));
+		};
+	}
 }
