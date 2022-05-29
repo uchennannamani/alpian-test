@@ -1,5 +1,6 @@
 package com.uche.customermapperservice.dao;
 
+import com.uche.customermapperservice.exception.CustomerNotFoundException;
 import com.uche.customermapperservice.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
