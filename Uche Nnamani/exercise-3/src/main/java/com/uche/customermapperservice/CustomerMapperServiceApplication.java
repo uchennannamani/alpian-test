@@ -7,6 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.time.LocalDate;
+
 @SpringBootApplication
 public class CustomerMapperServiceApplication {
 
@@ -17,8 +19,8 @@ public class CustomerMapperServiceApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(CustomerRepository customerRepository) {
 		return args -> {
-			customerRepository.save(new Customer(1, "2021-11-25"));
-			customerRepository.save(new Customer(2, "2020-09-15"));
+			customerRepository.save(new Customer(1, LocalDate.parse("2021-11-25")));
+			customerRepository.save(new Customer(2, LocalDate.parse("2023-09-15")));
 		};
 	}
 }

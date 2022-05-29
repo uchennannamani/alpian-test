@@ -10,4 +10,8 @@ class CustomerMapperServiceApplicationTests {
 	void contextLoads() {
 	}
 
+	// test for different date inputs (past, today, future)
+	// test for class in customerId
+	// test for date format error
+
 }
