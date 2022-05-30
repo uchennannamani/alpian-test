@@ -7,8 +7,13 @@
     <list default="true" id="316ed9ac-8a69-4c20-9363-fee143b74340" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exercise-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise-2/src/main/java/com/uch/exercise_2/DotProductUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-2/src/main/java/com/uch/exercise_2/DotProductUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise-2/src/test/java/com/uch/exercise_2/DotProductUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-2/src/test/java/com/uch/exercise_2/DotProductUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/CustomerMapperServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/CustomerMapperServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/dao/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/dao/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/exception/CustomerNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/service/DateValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/main/java/com/uche/customermapperservice/service/DateValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-3/src/test/java/com/uche/customermapperservice/CustomerMapperServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-3/src/test/java/com/uche/customermapperservice/CustomerMapperServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

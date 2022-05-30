@@ -3,10 +3,7 @@ package com.uche.customermapperservice.model;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.UUID;
 
 @Entity
@@ -16,10 +13,10 @@ public class Customer {
     @GeneratedValue
     @Column(name = "external_id", updatable = false, nullable = false)
     private UUID externalId;
-    // We will assume this to be from an external service provider. We wil assume the external.
+
     @Column(name = "customer_id", unique = true)
     private int customerId;
-    // Since it will be provided during post, we will assume it is not a primary key. However, we need to make it a unique value.
+
     @Column(name = "created_date")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate createdDate;

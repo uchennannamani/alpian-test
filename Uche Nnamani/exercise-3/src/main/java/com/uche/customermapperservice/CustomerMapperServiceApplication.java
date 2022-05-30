@@ -16,11 +16,14 @@ public class CustomerMapperServiceApplication {
 		SpringApplication.run(CustomerMapperServiceApplication.class, args);
 	}
 
+
 	@Bean
 	CommandLineRunner commandLineRunner(CustomerRepository customerRepository) {
+		// Populate the in-memory database with some data.
 		return args -> {
 			customerRepository.save(new Customer(1, LocalDate.parse("2021-11-25")));
-			customerRepository.save(new Customer(2, LocalDate.parse("2023-09-15")));
+			customerRepository.save(new Customer(2, LocalDate.parse("2020-09-15")));
+			customerRepository.save(new Customer(3, LocalDate.parse("2019-09-25")));
 		};
 	}
 }
