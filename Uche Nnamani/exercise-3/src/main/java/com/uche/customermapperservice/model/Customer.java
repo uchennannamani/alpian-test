@@ -1,6 +1,5 @@
 package com.uche.customermapperservice.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;

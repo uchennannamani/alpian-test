@@ -9,8 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/v1/api")
 public class CustomerController {
@@ -49,13 +47,5 @@ public class CustomerController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Customer, with Id: "
                     + customerId + ", Not Found in Repository", nullPointerException);
         }
-    }
-
-
-    // remove this method
-    @GetMapping("/customers")
-    public List<Customer> getCustomers() {
-
-        return customerRepository.findAll();
     }
 }

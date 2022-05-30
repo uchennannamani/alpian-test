@@ -12,5 +12,4 @@ public interface CustomerRepository extends JpaRepository<Customer, UUID> {
 
     @Query("SELECT c FROM Customer c WHERE c.customerId = ?1")
     Customer findByCustomerId(int customerId);
-
 }
