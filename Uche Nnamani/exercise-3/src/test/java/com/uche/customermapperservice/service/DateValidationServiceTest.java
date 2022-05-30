@@ -21,7 +21,6 @@ class DateValidationServiceTest {
     @DisplayName("Validating dates in the future. DateValidationService should result to 'true' for dates in the future")
     @Order(1)
     void isDateInTheFutureTest_1() {
-
         assertTrue(dateValidationService.isDateInTheFuture(LocalDate.now().plusDays(1)));
         assertTrue(dateValidationService.isDateInTheFuture(LocalDate.now().plusWeeks(1)));
         assertTrue(dateValidationService.isDateInTheFuture(LocalDate.now().plusMonths(1)));
@@ -32,7 +31,6 @@ class DateValidationServiceTest {
     @DisplayName("Validating dates in the past. DateValidationService will result to 'false' for dates in the past")
     @Order(2)
     void isDateInTheFutureTest_2() {
-
         assertFalse(dateValidationService.isDateInTheFuture(LocalDate.now().minusDays(1)));
         assertFalse(dateValidationService.isDateInTheFuture(LocalDate.now().minusWeeks(1)));
         assertFalse(dateValidationService.isDateInTheFuture(LocalDate.now().minusMonths(1)));
@@ -43,7 +41,6 @@ class DateValidationServiceTest {
     @DisplayName("Validating today's date. DateValidationService will result to 'false' for today's date")
     @Order(3)
     void isDateInTheFutureTest_3() {
-
         assertFalse(dateValidationService.isDateInTheFuture(LocalDate.now()));
     }
 }
