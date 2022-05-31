@@ -7,16 +7,14 @@ public class DotProductUtil {
     public int calculateDotProductUsingMapReduce(int[] a, int[] b) {
 
         if (a.length != b.length) {
+
             throw new IllegalArgumentException("The lengths of both arrays must be equal");
         } else {
 
-            int sum = IntStream.range(0, a.length)
+            return IntStream.range(0, a.length)
                     .parallel()
                     .map(i -> a[i] * b[i])
                     .reduce(0, Integer::sum);
-
-            System.out.println("The dotProduct = " + sum);      // remove at the end
-            return sum;
         }
     }
 }

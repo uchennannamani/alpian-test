@@ -28,15 +28,29 @@ class DotProductUtilTest {
     void calculateDotProductUsingMapReduce_1() {
 
         assertEquals(70, dotProductUtil.calculateDotProductUsingMapReduce(a, b));
+    }
+
+    @Test
+    @DisplayName("TEST_2: Test for 'happy path' using Map Reduce")
+    @Order(2)
+    void calculateDotProductUsingMapReduce_2() {
+
         assertEquals(217, dotProductUtil.calculateDotProductUsingMapReduce(c, d));
     }
 
     @Test
-    @DisplayName("TEST_2: Test for exception using Map Reduce")
-    @Order(2)
-    void calculateDotProductUsingMapReduce_2() {
+    @DisplayName("TEST_3: Test for exception using Map Reduce")
+    @Order(3)
+    void calculateDotProductUsingMapReduce_3() {
 
         assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingMapReduce(a, c));
+    }
+
+    @Test
+    @DisplayName("TEST_4: Test for exception using Map Reduce")
+    @Order(4)
+    void calculateDotProductUsingMapReduce_4() {
+
         assertThrows(IllegalArgumentException.class, () -> dotProductUtil.calculateDotProductUsingMapReduce(a, d));
     }
 }

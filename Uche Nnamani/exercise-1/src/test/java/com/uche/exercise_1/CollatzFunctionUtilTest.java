@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CollatzFunctionUtilTest {
     CollatzFunctionUtil collatzFunctionUtil;
@@ -45,11 +46,8 @@ class CollatzFunctionUtilTest {
     @DisplayName("TEST_3: Testing the Collatz function, for number 1, using head recursion.")
     @Order(3)
     void collatzSeriesUsingHeadRecursionTest_3() {
-        Integer[] b = {};
-        List<Integer> expected = Arrays.asList(b);
-        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingHeadRecursion(1);
-
-        assertArrayEquals(expected.toArray(), actual.toArray());
+        assertThrows(IllegalArgumentException.class,
+                () -> collatzFunctionUtil.calculateCollatzSeriesUsingHeadRecursion(1));
     }
 
     @Test
@@ -78,10 +76,8 @@ class CollatzFunctionUtilTest {
     @DisplayName("TEST_6: Testing the Collatz function, for number 1, using tail recursion.")
     @Order(6)
     void collatzSeriesUsingTailRecursionTest_3() {
-        Integer[] b = {};
-        List<Integer> expected = Arrays.asList(b);
-        List<Integer> actual = collatzFunctionUtil.calculateCollatzSeriesUsingTailRecursion(1);
 
-        assertArrayEquals(expected.toArray(), actual.toArray());
+        assertThrows(IllegalArgumentException.class,
+                () -> collatzFunctionUtil.calculateCollatzSeriesUsingTailRecursion(-1));
     }
 }
