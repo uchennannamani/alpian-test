@@ -1,8 +1,8 @@
 # CUSTOMER-MAPPER-SERVICE
 
 ## REQUIREMENTS
-This application is built with Java 11, so for building and running the application you need:
-- [JDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
+This application is written in Java 11, so for building and running the application you need:
+- [JDK 11+](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
 - [Maven 3](https://maven.apache.org)
 
 
@@ -15,4 +15,8 @@ mvn clean install
 ```
 
 ## APPLICATION ENDPOINTS
+See the API documentation at the following link: 
+```shell
+http://localhost:9000/swagger-ui/index.html
+```
 
