@@ -1,9 +1,6 @@
 package com.uche.customermapperservice.service;
 
-import com.uche.customermapperservice.CustomerMapperServiceApplication;
 import org.junit.jupiter.api.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
 
@@ -11,11 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@SpringBootTest(classes = CustomerMapperServiceApplication.class)
 class DateValidationServiceTest {
 
-    @Autowired
     private DateValidationService dateValidationService;
+
+    @BeforeEach
+    void setUp() {
+        dateValidationService = new DateValidationService();
+    }
 
     @Test
     @DisplayName("Validating dates in the future. DateValidationService should result to 'true' for dates in the future")

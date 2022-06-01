@@ -9,6 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/v1/api")
 public class CustomerController {
@@ -40,12 +43,12 @@ public class CustomerController {
     @GetMapping("/customers/{customerId}")
     public String getByCustomerId(@PathVariable int customerId) {
 
-        try {
-            Customer customerOptional = customerRepository.findByCustomerId(customerId);
-            return customerOptional.getExternalId().toString();
-        } catch (NullPointerException nullPointerException) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Customer, with Id: "
-                    + customerId + ", Not Found in Repository", nullPointerException);
+        Optional<Customer> customerOptional = customerRepository.findByCustomerId(customerId);
+
+        if (customerOptional.isPresent()) {
+            return customerOptional.get().getExternalId().toString();
+        } else {
+            throw new NoSuchElementException("Customer, with Id: " + customerId + ", Not Found in Repository");
         }
     }
 }
