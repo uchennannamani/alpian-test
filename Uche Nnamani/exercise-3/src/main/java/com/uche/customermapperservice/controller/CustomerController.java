@@ -15,10 +15,15 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/v1/api")
 public class CustomerController {
-    @Autowired
+
     CustomerRepository customerRepository;
-    @Autowired
     DateValidationService dateValidationService;
+
+    @Autowired
+    public CustomerController(CustomerRepository customerRepository, DateValidationService dateValidationService) {
+        this.customerRepository = customerRepository;
+        this.dateValidationService = dateValidationService;
+    }
 
     @PostMapping("/customers")
     public Customer storeCustomer(@RequestBody Customer customer) throws RuntimeException {
@@ -41,7 +46,7 @@ public class CustomerController {
     }
 
     @GetMapping("/customers/{customerId}")
-    public String getByCustomerId(@PathVariable int customerId) {
+    public String getByCustomerId(@PathVariable int customerId) throws NoSuchElementException {
 
         Optional<Customer> customerOptional = customerRepository.findByCustomerId(customerId);
 
